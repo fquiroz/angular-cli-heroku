@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { routes } from './app.routes';
-import { MatInputModule,MatRippleModule} from '@angular/material';
+import { MatInputModule,MatRippleModule,MatMenuModule} from '@angular/material';
 import { FormsModule } from '@angular/forms';
 import {SharedModule} from './shared/shared.module';
 import {LoginModule} from './login/login.module';
@@ -39,6 +39,7 @@ import { ToastrModule } from 'ngx-toastr';
   exports: [
     MatInputModule,
     MatRippleModule,
+    MatMenuModule,
     CommonModule,
     BrowserModule,
     BrowserAnimationsModule,
