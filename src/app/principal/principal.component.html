@@ -1,0 +1,54 @@
+
+
+ <mat-toolbar color="primary">
+    <button mat-icon-button color="accent" (click)="side.sidenav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>￼
+    <span>{{title}}</span>
+    <span class="fill-remaining-space"></span>
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item >
+        <mat-icon>settings</mat-icon>
+        <span>Preferencias</span>
+      </button>
+      <button mat-menu-item  (click)="logout();">
+        <mat-icon>exit_to_app</mat-icon>
+        <span>Salir</span>
+      </button>
+    </mat-menu>
+</mat-toolbar> 
+
+
+<mat-sidenav-container>
+
+    <app-sidenav #side></app-sidenav>
+
+    <router-outlet></router-outlet>
+
+</mat-sidenav-container>
+
+<footer class="footer">footer</footer> 
+
+ <!-- <div class="my-content">
+    
+    <mat-sidenav-container >
+        <app-sidenav > </app-sidenav>
+        <div class="my-content">
+            <mat-toolbar [color]="primary">
+              <button mat-icon-button (click)="sidenav.open()">
+                <mat-icon>menu</mat-icon></button>
+          
+              <span>{{title}}</span>
+              <span class="fill-remaining-space"></span>
+              <span>ahora si</span>
+            </mat-toolbar>
+            
+            <router-outlet></router-outlet>
+          
+          </div>
+    </mat-sidenav-container>
+        
+</div>  -->

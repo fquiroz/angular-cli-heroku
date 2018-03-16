@@ -1,0 +1,12 @@
+.example-card {
+  width: 70%; 
+  left: 10%;
+  margin-top: 2%;
+  }
+  
+  .example-header-image {
+    background-image: url('../../assets/images/productospelu.jpg');
+    background-size: cover;
+  }
+
+

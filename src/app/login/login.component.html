@@ -1,0 +1,77 @@
+
+     <!--  <div class="login-page animate">
+      <div class="row">
+      
+    
+    
+        
+          <form class="example-form">
+           
+    
+            <p>
+              <mat-input-container class="example-full-width">
+                <input matInput placeholder="usuario">
+              </mat-input-container>
+              <mat-input-container class="example-full-width">
+                <input matInput placeholder="Password">
+              </mat-input-container>
+            </p>
+            
+          
+          
+            <div class="button-row">
+           
+              <button mat-raised-button (click)="login();" >Entrar</button>
+              
+            </div>
+          
+          
+       
+          </form> 
+      </div>
+      </div> -->
+    
+
+
+      <div class="container "  >
+          <div class="title" color="primary" >
+              Fashion Style Salon UNISEX
+          </div>
+          <div class="panel-body z-depth-5" >
+              <div class="row">
+                  
+                    <div class="input-field col s12">
+
+                    
+                      <mat-input-container class="example-full-width">
+                        <input matInput [(ngModel)]="usuario" placeholder="usuario">
+                      </mat-input-container>
+
+                    </div>
+
+                  </div>
+                  <div class="row">
+                    
+                    
+                      <mat-input-container class="example-full-width">
+                        <input matInput  [(ngModel)]="password" placeholder="Password">
+                      </mat-input-container>
+                    
+                  </div>
+              
+              <div class="button-row">
+                  
+                     <button mat-raised-button color="primary" (click)="login();" >Entrar</button>
+                     
+                 
+                   
+                   </div>
+              <span>{{errorMsg}}</span>
+        
+          </div>
+      </div>
+    
+        
+        
+        
+ 
