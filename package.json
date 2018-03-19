@@ -41,8 +41,7 @@
     "web-animations-js": "^2.3.1",
     "zone.js": "^0.8.4"
   },
-  "devDependencies": {
-    "@angular/compiler-cli": "~5.0.1",
+  "devDependencies": {    
     "@angular/language-service": "^4.0.0",
     "@types/hammerjs": "^2.0.35",
     "@types/jasmine": "2.5.38",
