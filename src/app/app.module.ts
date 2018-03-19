@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { routes } from './app.routes';
-import { MatInputModule,MatRippleModule,MatMenuModule} from '@angular/material';
+import { MatInputModule,MatRippleModule,MatMenuModule,MatToolbarModule} from '@angular/material';
 import { FormsModule } from '@angular/forms';
 import {SharedModule} from './shared/shared.module';
 import {LoginModule} from './login/login.module';
@@ -32,6 +32,7 @@ import { ToastrModule } from 'ngx-toastr';
     CommonModule,
     MatInputModule,
     MatRippleModule,
+    MatToolbarModule,
     ToastrModule.forRoot()
 
   ],
@@ -40,6 +41,7 @@ import { ToastrModule } from 'ngx-toastr';
     MatInputModule,
     MatRippleModule,
     MatMenuModule,
+    MatToolbarModule,
     CommonModule,
     BrowserModule,
     BrowserAnimationsModule,

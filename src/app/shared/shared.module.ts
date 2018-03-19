@@ -1,6 +1,6 @@
 import { NgModule ,ModuleWithProviders} from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {MatSidenavModule,MatIconModule,MatNavList}  from '@angular/material';
+import {MatSidenavModule,MatIconModule,MatNavList,MatListModule}  from '@angular/material';
 import { SharedRoutingModule } from './shared-routing.module';
 import { ParseService,AuthService,ProductosService,NewsService } from './services/index';
 @NgModule({
@@ -8,10 +8,11 @@ import { ParseService,AuthService,ProductosService,NewsService } from './service
     CommonModule,
     MatSidenavModule,
     MatIconModule,
+    MatListModule,
     SharedRoutingModule
   ],
   declarations: [],
-  exports: [CommonModule, MatSidenavModule,MatIconModule,SharedRoutingModule]
+  exports: [CommonModule, MatListModule,MatSidenavModule,MatIconModule,SharedRoutingModule]
 })
 export class SharedModule {
   static forRoot(): ModuleWithProviders {

@@ -5,7 +5,7 @@ import {MatMenuModule,MatToolbarModule} from '@angular/material'
 import {PrincipalRoutes} from './principal-routes';
 @NgModule({
   imports: [
-    CommonModule,
+    CommonModule,    
     MatMenuModule,MatToolbarModule,
     RouterModule.forRoot(PrincipalRoutes)
   ],
