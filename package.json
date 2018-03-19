@@ -69,5 +69,9 @@
     "tslint-loader": "^3.5.2",
     "typedoc": "^0.7.1",
     "typescript": "2.4.2"
+  },
+  "engines": {
+    "node": "6.9.2",
+    "yarn": "0.23.3"
   }
 }
