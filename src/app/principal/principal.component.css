@@ -34,6 +34,9 @@ h1.example-app-name {
   height: 50px;
    background-color: #c2185b; 
 } 
+.fill-remaining-space {
+  flex: 1 1 auto;
+}
 
 
 /* 
