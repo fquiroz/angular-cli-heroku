@@ -15,7 +15,7 @@ export class ParseService {
     this.chatQueries = new Map<string,any>()
     console.log('Parse initialized!')
     Parse.initialize("myAppId");
-    Parse.serverURL = 'http://servidorparse.herokuapp.com/parse'
+    Parse.serverURL = 'https://servidorparse.herokuapp.com/parse'
   }
 
   public newsSubscription() {
