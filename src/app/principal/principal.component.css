@@ -30,6 +30,11 @@ h1.example-app-name {
   flex: 1 0 auto;
 }
 
+.footer {
+  height: 50px;
+   background-color: #c2185b; 
+} 
+
 
 /* 
 md-sidenav-container, .my-content {
