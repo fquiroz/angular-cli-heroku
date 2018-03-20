@@ -1,17 +1,17 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\fquiroz\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js install
+  /usr/local/bin/node /usr/local/bin/yarn install
 
 PATH: 
-  C:\Program Files (x86)\Intel\iCLS Client\;C:\ProgramData\Oracle\Java\javapath;C:\ORACLE\INSTANTCLIENT;C:\Program Files\Intel\iCLS Client\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;c:\oracle\instantclient;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Git\cmd;C:\Program Files\PuTTY\;C:\dev\gradle-4.6\bin\;C:\Program Files\nodejs\;C:\Program Files (x86)\WinMerge;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Users\fquiroz\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Users\fquiroz\AppData\Roaming\npm
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands
 
 Yarn version: 
   1.5.1
 
 Node version: 
-  8.10.0
+  6.11.0
 
 Platform: 
-  win32 x64
+  darwin x64
 
 npm manifest: 
   {
@@ -137,7 +137,7 @@ Lockfile:
     dependencies:
       tslib "^1.7.1"
   
-  "@angular/cli@^1.6.3":
+  "@angular/cli@^1.6.4":
     version "1.7.3"
     resolved "https://registry.yarnpkg.com/@angular/cli/-/cli-1.7.3.tgz#ac917b69240bb1b340421e9f985135890e0d53b4"
     dependencies:
@@ -8299,13 +8299,13 @@ Lockfile:
 
 Trace: 
   Error: Found incompatible module
-      at new MessageError (C:\Users\fquiroz\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:186:110)
-      at Object.checkOne (C:\Users\fquiroz\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:62444:11)
-      at C:\Users\fquiroz\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:22773:75
-      at Generator.next (<anonymous>)
-      at step (C:\Users\fquiroz\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:98:30)
-      at C:\Users\fquiroz\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:116:14
-      at new Promise (<anonymous>)
-      at new F (C:\Users\fquiroz\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:23451:28)
-      at C:\Users\fquiroz\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:95:12
-      at C:\Users\fquiroz\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:22777:27
+      at MessageError.Error (native)
+      at new MessageError (/usr/local/lib/node_modules/yarn/lib/cli.js:186:110)
+      at Object.checkOne (/usr/local/lib/node_modules/yarn/lib/cli.js:62444:11)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:22773:75
+      at next (native)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:98:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:116:14
+      at Promise.F (/usr/local/lib/node_modules/yarn/lib/cli.js:23451:28)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:95:12
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:22777:27
