@@ -5,7 +5,7 @@
       <mat-card-title>Productos</mat-card-title>
     </mat-card-header>
        <mat-card-content>
-          <mat-spinner *ngIf="resourcesLoaded === false"></mat-spinner>
+          <mat-spinner style="margin:0 auto;"  *ngIf="resourcesLoaded === false"></mat-spinner>
           <div class="example-container mat-elevation-z8">
               
                 <mat-table #table [dataSource]="dataSource">
