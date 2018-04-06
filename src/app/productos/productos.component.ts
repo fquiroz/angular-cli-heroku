@@ -24,6 +24,7 @@ import * as Parse from 'parse';
 })
 export class ProductosComponent  {
 
+  resourcesLoaded:boolean = false;
   displayedColumns = ['nombre', 'precio'];
   dataSource: Producto[]; 
 
@@ -36,6 +37,7 @@ export class ProductosComponent  {
 
   ngOnInit() {
     this.productoservice.getAllProductos().subscribe((data:Producto[])=>{
+      this.resourcesLoaded=true;
       this.dataSource = data as Producto[] ; 
       console.log('productos OK',data);  
       return data;
