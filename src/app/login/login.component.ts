@@ -25,12 +25,16 @@ export class LoginComponent implements OnInit {
   login() {
     this.auth.login('fquiroz','fer').subscribe(data=>{
      console.log('login OK');
+
+     this.auth.getRoles('fquiroz');
      this.router.navigate(['principal/productos']);
     },(error:HttpErrorResponse)=>{
       this.toastr.error(error.message, 'Error!');
       console.log('login error:' ,error);
     });
     
+
+  
   }
 
 }

@@ -122,6 +122,60 @@ export class ParseService {
     return null
   }
 
+   getUserRoles(user) {
+
+    var queries = [
+      new Parse.Query(Parse.Role).equalTo('users', user)
+    ];
+  /*   for (var i = 0; i < 2; i++) {
+      queries.push(new Parse.Query('_Role').matchesQuery('roles', queries[i]));
+    } 
+    
+     user = Parse.Query.or.apply(Parse.Query, queries).find().then(
+      function(roles) {
+        return roles.map(function(role) {
+          return role.get('name');
+        });
+      }
+    );
+
+    let u = Parse.User.current()
+    const userRoleQuery = u.relation(Parse.Role).query();
+
+        const role = userRoleQuery.find();
+
+var Role = Parse.Object.extend("_Role");
+var User = Parse.Object.extend("_User");
+
+
+var innerQuery = new Parse.Query(Parse.Role);
+
+
+innerQuery.find({
+  success: function(comments) {
+
+    for (var i = 0; i < comments.length; i++) {
+      // This does not require a network access.
+      var post = comments[i].get("users");
+      var user =post.query().find();
+      alert("roles " + comments.length + " scores.");
+    }
+    
+    // comments now contains the comments for myPost
+  }
+});
+var query = new Parse.Query(User);
+query.equalTo("username", "fquiroz");
+query.find({
+  success: function(comments) {
+    alert("usuario " + comments.length + " scores.");
+    // comments now contains the comments for myPost
+  }
+});*/
+
+
+  }
+
   // TODO: paging
  /*  public loadAllMessages(roomId:string): Observable<ChatMessage[]> {
     return new Observable(observer => {

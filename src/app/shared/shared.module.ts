@@ -1,6 +1,6 @@
 import { NgModule ,ModuleWithProviders} from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {MatSidenavModule,MatIconModule,MatNavList,MatListModule}  from '@angular/material';
+import {MatSidenavModule,MatIconModule,MatListModule}  from '@angular/material';
 import { SharedRoutingModule } from './shared-routing.module';
 import { ParseService,AuthService,ProductosService,NewsService } from './services/index';
 @NgModule({

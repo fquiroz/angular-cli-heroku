@@ -27,4 +27,9 @@ export class AuthService {
   get currentUser() : User {
     return this.auth$.currentUser
   }
+
+  getRoles(user:string){
+    return this.auth$.getUserRoles(user);
+  }
+
 }

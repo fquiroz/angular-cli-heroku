@@ -14,15 +14,18 @@ import 'hammerjs';
 import { SidenavComponent } from './shared/componentes/sidenav/sidenav.component';
 import { PrincipalComponent } from './principal/principal.component';
 import { ToastrModule } from 'ngx-toastr';
+import { NgxSpinnerModule } from 'ngx-spinner';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     SidenavComponent,
-    PrincipalComponent
+    PrincipalComponent,
   ],
   imports: [
     BrowserModule,
+    NgxSpinnerModule,
     BrowserAnimationsModule,
     RouterModule.forRoot(routes),
     SharedModule.forRoot(),
