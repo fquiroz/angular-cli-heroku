@@ -25,7 +25,7 @@ import * as Parse from 'parse';
 export class ProductosComponent  {
 
   resourcesLoaded:boolean = false;
-  displayedColumns = ['nombre', 'precio'];
+  displayedColumns = ['nombre', 'precioRef'];
   dataSource: Producto[]; 
 
   constructor(private productoservice:ProductosService) {  

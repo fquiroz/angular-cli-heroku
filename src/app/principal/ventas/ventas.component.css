@@ -1,0 +1,12 @@
+.example-container {
+    display: flex;
+    min-width: 150px;
+    max-width: 500px;
+    flex-direction: column;
+  }
+  
+  .example-container > * {
+    width: 100%;
+  }
+
+  

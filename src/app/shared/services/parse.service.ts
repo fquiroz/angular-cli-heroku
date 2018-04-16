@@ -273,7 +273,7 @@ query.find({
             let p = new Producto();
             p.id = object.id;
             p.nombre = object.get('nombre');
-            p.precio = object.get('precio');
+            p.precioRef = object.get('precioRef');
             productos.push(p);
           }
           observer.next(productos);

@@ -1,0 +1,55 @@
+
+<mat-card>
+
+  <div class="example-container">
+
+      <mat-grid-list cols="2" rowHeight="2:1">
+
+          <mat-grid-tile>
+
+           
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="State" aria-label="State" [matAutocomplete]="auto" [formControl]="stateCtrl">
+                    <mat-autocomplete #auto="matAutocomplete" autoActiveFirstOption (optionSelected)="selected($event)" [displayWith]="displayFn">
+                      <mat-option *ngFor="let state of filteredStates | async" [value]="state">
+                        <span>{{ state.nombre }}</span> |
+                        <small>Precio: {{state.precioRef}}</small>
+                      </mat-option>
+                    </mat-autocomplete>
+                  </mat-form-field>
+                  
+         
+              
+          </mat-grid-tile>
+         
+        <div *ngIf="productoSeleccionado">
+
+          <mat-grid-tile> 
+            
+            <mat-form-field>
+              <input matInput placeholder="Precio" [value]="productoSeleccionado.precioRef">
+            </mat-form-field>
+          </mat-grid-tile>
+          </div>
+         
+        
+          <!--   <mat-grid-tile>
+                <mat-form-field>
+                  <button mat-button color="primary">Guardar</button>
+                  </mat-form-field>
+            </mat-grid-tile>
+        -->
+        
+          
+        
+        </mat-grid-list>
+   
+  
+  
+  
+  
+  </div>
+
+  
+</mat-card>
+ 
