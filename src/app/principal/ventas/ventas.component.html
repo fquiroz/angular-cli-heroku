@@ -22,17 +22,25 @@
               
           </mat-grid-tile>
          
-        <div *ngIf="productoSeleccionado">
+       <!--  <div *ngIf="productoSeleccionado"> -->
 
           <mat-grid-tile> 
             
             <mat-form-field>
               <input matInput placeholder="Precio" [value]="productoSeleccionado.precioRef">
+               
             </mat-form-field>
           </mat-grid-tile>
-          </div>
-         
-        
+        <!--   </div> -->
+
+          <mat-grid-tile>
+            
+              <div class="button-row">
+                  <button mat-raised-button>Primary</button>  
+              </div>
+      
+          
+          </mat-grid-tile>
           <!--   <mat-grid-tile>
                 <mat-form-field>
                   <button mat-button color="primary">Guardar</button>

@@ -20,7 +20,7 @@ export class VentasComponent implements OnInit {
 
   stateCtrl: FormControl;
   filteredStates: Observable<any[]>;
-  productoSeleccionado:Producto;
+  productoSeleccionado:Producto = new Producto();
  
   dataSource: Producto[]; 
 
