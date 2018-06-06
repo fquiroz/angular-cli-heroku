@@ -1,8 +1,6 @@
 .example-container {
     display: flex;
-    min-width: 150px;
-    max-width: 500px;
-    flex-direction: column;
+    flex-direction: row-reverse;
   }
   
   .example-container > * {

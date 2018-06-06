@@ -3,7 +3,7 @@ import {FormControl} from '@angular/forms';
 import {Observable} from 'rxjs/Observable';
 import {startWith} from 'rxjs/operators/startWith';
 import {map} from 'rxjs/operators/map';
-import {Producto} from '../../shared/domain/producto';
+import {Producto,Address} from '../../shared/domain/producto';
 import {ParseService} from '../../shared/services/parse.service';
 import {HttpErrorResponse} from '@angular/common/http'
 import * as Parse from 'parse';
@@ -21,7 +21,7 @@ export class VentasComponent implements OnInit {
   stateCtrl: FormControl;
   filteredStates: Observable<any[]>;
   productoSeleccionado:Producto = new Producto();
- 
+  address = new Address();
   dataSource: Producto[]; 
 
   ngOnInit() {
@@ -45,6 +45,10 @@ export class VentasComponent implements OnInit {
       return data;
     });
    
+  }
+
+  onSubmit() {
+    alert("Thanks for submitting! Data: " + JSON.stringify(this.address));
   }
 
   filterStates(name: string) {
