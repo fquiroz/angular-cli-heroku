@@ -48,7 +48,7 @@ import { SidenavComponent } from './shared/componentes/sidenav/sidenav.component
 import { PrincipalComponent } from './principal/principal.component';
 import { ToastrModule } from 'ngx-toastr';
 import { NgxSpinnerModule } from 'ngx-spinner';
-
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -60,6 +60,7 @@ import { NgxSpinnerModule } from 'ngx-spinner';
     BrowserModule,
     NgxSpinnerModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     RouterModule.forRoot(routes),
     SharedModule.forRoot(),
     ProductosModule,
@@ -149,7 +150,8 @@ import { NgxSpinnerModule } from 'ngx-spinner';
     CommonModule,
     BrowserModule,
     MatAutocompleteModule,    
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
     
   ],
   providers: [],

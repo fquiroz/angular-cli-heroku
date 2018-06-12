@@ -14,6 +14,8 @@ import {ProductosService} from '../shared/services/productos.service';
 import {ParseService} from '../shared/services/parse.service';
 import {HttpErrorResponse} from '@angular/common/http'
 import * as Parse from 'parse';
+import { FacturacionService } from '../shared/services';
+import { IvaTipo } from '../shared/domain/iva-tipo';
 
 @Component({
   selector: 'app-productos',
@@ -28,7 +30,7 @@ export class ProductosComponent  {
   displayedColumns = ['nombre', 'precioRef'];
   dataSource: Producto[]; 
 
-  constructor(private productoservice:ProductosService) {  
+  constructor(private productoservice:ProductosService,private factService:FacturacionService) {  
   }
  
 
@@ -43,7 +45,9 @@ export class ProductosComponent  {
       return data;
     });
     
-      
+    this.factService.traerTiposIva().subscribe((tiposIvas:IvaTipo[])=>{
+        console.log('tiposIva=',tiposIvas);
+    });
     
     
   }

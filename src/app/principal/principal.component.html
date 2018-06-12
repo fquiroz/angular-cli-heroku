@@ -24,22 +24,22 @@
   <mat-sidenav-container class="example-container">
     <mat-sidenav #sidenav mode="side" opened="true" class="example-sidenav">
       <mat-nav-list>
-            <a mat-list-item (click)="sidenav.close()" [routerLink]="['productos']">
+            <a mat-list-item [routerLink]="['productos']">
               <mat-icon mat-list-icon>Servicios</mat-icon>
               <span mat-line>Home</span>
               <span mat-line class="secondary"></span>
             </a>
-            <a mat-list-item (click)="sidenav.close()" [routerLink]="['ventas']">
+            <a mat-list-item [routerLink]="['ventas']">
               <mat-icon mat-list-icon>list</mat-icon>
               <span mat-line>Ventas</span>
               <span mat-line class="secondary"></span>
             </a>
-            <a mat-list-item (click)="sidenav.close()" [routerLink]="['/tags']">
+            <a mat-list-item [routerLink]="['/tags']">
               <mat-icon mat-list-icon>bookmark</mat-icon>
               <span mat-line>Mensual</span>
               <span mat-line class="secondary">Tags</span>
             </a>
-            <a mat-list-item (click)="sidenav.close()" [routerLink]="['/questions']">
+            <a mat-list-item  [routerLink]="['/questions']">
               <mat-icon mat-list-icon>question_answer</mat-icon>
               <span mat-line>Estadisticas</span>
               <span mat-line class="secondary">Questions</span>
@@ -48,8 +48,9 @@
     </mat-sidenav>
 
     <mat-sidenav-content>
-      
-     
+
+      <router-outlet></router-outlet>
+
     </mat-sidenav-content>
     
   </mat-sidenav-container>

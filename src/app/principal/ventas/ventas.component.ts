@@ -23,6 +23,8 @@ export class VentasComponent implements OnInit {
   productoSeleccionado:Producto = new Producto();
   address = new Address();
   dataSource: Producto[]; 
+  seleccionado = 'option2';
+
 
   ngOnInit() {
     
