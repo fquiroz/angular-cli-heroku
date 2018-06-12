@@ -28,7 +28,9 @@ export class ProductosComponent  {
 
   resourcesLoaded:boolean = false;
   displayedColumns = ['nombre', 'precioRef'];
+  
   dataSource: Producto[]; 
+  tipoivas:IvaTipo[];
 
   constructor(private productoservice:ProductosService,private factService:FacturacionService) {  
   }
@@ -45,8 +47,9 @@ export class ProductosComponent  {
       return data;
     });
     
-    this.factService.traerTiposIva().subscribe((tiposIvas:IvaTipo[])=>{
-        console.log('tiposIva=',tiposIvas);
+    this.factService.traerTiposIva().subscribe((datos:IvaTipo[])=>{
+      
+        this.tipoivas=datos;
     });
     
     
